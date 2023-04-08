@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glasses Store - Products</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/w3.css">
+</head>
+
+<body style="margin: auto;">
+    
+    <div class="container">
+        
+        <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation" style="height: 61px; width: 90%; margin: auto; border: solid 1px rgb(255, 193, 8); border-radius: 5px;">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+            
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html"><img src="logo_icon/logo.png" style="height: 40px;"></a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html" style="font-family: Roboto;color: black;font-size: 28px; margin: 10px 20px;">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" style="font-family: Roboto;color: black;font-size: 28px; margin: 10px 20px;">About </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" style="font-family: Roboto;color: black;font-size: 28px; margin: 10px 20px;">Contact </a>
+                    </li>
+                </ul>
+
+                <form class="navbar-form navbar-left" id="formSearch">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" id="search" name="search" style="width: 250px; height: 40px;margin: 8px 0;">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit" style="height: 40px;">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <ul class="nav navbar-nav navbar-right" style="margin-right: 20px;">
+                    <li><a href="#">
+                        <i class="glyphicon glyphicon-shopping-cart cart-icon" data-toggle="modal" data-target="#cart" style="color: black;">
+                            <b><span class="total-count badge cart-badge"></span></b>
+                        </i></a>
+                    </li>
+                    <li><a href="login.html"><img src="logo_icon/user.png" style="height: 26px;"></a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+
+
+        <div class="page-header">
+            <h2 style="padding-top: 2rem;">PRODUCTS </h2>
+        </div>
+
+        <!--main content-->
+        <div class="row">
+            <div class="col-sm-2 v-menu";>
+                <h3>Categories</h3>
+                <hr>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="eyeglasses" class="chk-cake" name="cat">
+                        Eyeglasses
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="sunglasses" class="chk-cake" name="cat">
+                        Sunglasses
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="reading glasses" class="chk-cake" name="cat">
+                        Reading Glasses
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="contact lenses" class="chk-cake" name="cat">
+                        Contact Lenses
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-md-10">
+                <div class="row" id="products">
+
+                    <div class="col-sm-6 col-md-4 divImage">
+                        <img src="image/PeeperSpecs.jpg" alt="" class="flowerImage">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end main content-->
+
+        <!--preview compare panel-->
+        <div class="panel-body  w3-center">
+            <div class="row w3-card-4 w3-light-grey w3-round-large w3-border comparePanel w3-margin-top">
+                <div class="row">
+                    <div class="col-lg-9 col-md-8 col-sm-6 w3-margin-top">
+                        <h4>Added for comparison</h4>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 w3-margin-top">
+                        <button class="btn btn-danger cmprBtn" disabled>Compare</button>
+                    </div>
+                </div>
+                <div class="row titleMargin comparePan">
+                </div>
+            </div>
+        </div>
+        <!--end of preview compare panel-->
+
+        <!-- comparision popup-->
+        <div id="popup" class="w3-animate-zoom w3-white w3-modal modPos">
+            <div class="container">
+                <a onclick="document.getElementById('popup').style.display='none'" class="w3-closebtn closeBtn">×</a>
+            </div>
+            <div class="row contentPop w3-margin-top">
+            </div>
+
+        </div>
+        <!--end of comparision popup-->
+
+        <!--  compare warning model  -->
+        <div id="WarningModal" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: cadetblue;">
+                        <h4 class="modal-title"><span> ⚠ </span> Error</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h3>Maximum of Three products are allowed for comparision</h3>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!--  end of compare warning model  -->
+
+        
+         <!-- Modal cart-->
+        <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h3 class="modal-title" id="exampleModalLabel">CART</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                <table class="show-cart table">
+                    
+                </table>
+                <h4>Total price: $<span class="total-cart"></span></h4>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" style="background-color: #fb6969; border-radius: 20px;" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" style="background-color: #fb6969; border-radius: 20px;"> <a href="checkout.html">Order now</a></button>
+                </div>
+            </div>
+            </div>
+        </div> 
+        <!-- End Modal cart-->
+    </div>
+    <br> <br> 
+    <div class="container">
+        <div style="text-align:center">
+        <h1 style="color: rgb(255, 193, 8);" id="contact">CONTACT US</h1>
+          
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+              <div class="column">
+                <div style="text-align: center; background-color:rgb(251, 230, 169);border-radius: 8px;">
+                    <img src="logo_icon/place.png" style="width: 15%;" class="f1">
+                    <br>
+                    <h5 style="text-align: left;">
+                    - Store 1: 590 Cach Mang Thang 8,P.11, Q 3, Ho Chi Minh City <br><br>
+                    - Store 2: 62 Street 36, KDC Van Phuc, P.Hiep Binh Phuoc, Thu Duc City.
+                    </h5>
+                </div>
+                <br> <br>
+                <div style="text-align: center;background-color:rgb(251, 230, 169);border-radius: 8px;">
+                    <img src="logo_icon/call.png" style="width: 12%;" class="f1">
+                    <br>
+                    <h5>
+                    Tell: 1 (234) 567-891 <br><br>
+                    Tell: 1 (234) 987-654 
+                    </h5>
+                </div>
+              </div>
+          </div>
+          <div class="col-sm-4" style="margin: auto;">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3192813592464!2d106.66408561467625!3d10.786840061951278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed2392c44df%3A0xd2ecb62e0d050fe9!2zRlBUIEFwdGVjaCBIQ00gMSAtIEjhu4cgVGjhu5FuZyDEkMOgbyBU4bqhbyBM4bqtcCBUcsOsbmggVmnDqm4gUXXhu5FjIFThur8gKFNpbmNlIDE5OTkp!5e0!3m2!1svi!2s!4v1679514213021!5m2!1svi!2s" width="300" height="350" style="border: 5px; border-radius: 10px; margin: 0 0 0 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="col-sm-4">
+            <div class="column" style="background-color: rgb(251, 230, 169);border-radius: 8px;">
+              <form  onsubmit="showinfo()">  
+              <form action="/action_page.php">
+                  <label for="fname">First Name</label><br>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+                  <label for="lname">Last Name</label><br>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+                  <label for="fname">Subject</label><br>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:120px"></textarea><br>
+                  <input type="submit" value="Submit" style="border-radius: 10px;">
+                </form>
+    
+                </form>
+              </div>
+        </div>
+      </div>
+      
+    </div>
+    <div style="position: fixed; bottom: 0; width: 100%; background-color: rgb(255, 193, 8); color: ba;">
+        <marquee>
+          <span id="date"></span> | <span id="time"></span> | <span id="location"></span>
+        </marquee>
+      </div>
+    <!-- date time -->
+
+ <script>
+    function updateTicker() {
+    var now = new Date();
+    var date = now.toLocaleDateString();
+    var time = now.toLocaleTimeString();
+    var location = "Unknown";
+    
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            var lat = position.coords.latitude;
+            var lng = position.coords.longitude;
+            
+            // You can use the lat and lng values to get the location
+            // using a reverse geocoding API
+            location = "Latitude: " + lat + ", Longitude: " + lng;
+            
+            document.getElementById("location").innerHTML = location;
+        });
+    }
+    document.getElementById("date").innerHTML = date;
+    document.getElementById("time").innerHTML = time;
+  }
+  // Update the ticker every second
+  setInterval(updateTicker, 1000);
+   </script>
+    <!-- contact us  -->
+    <script>
+      function showinfo()
+    {
+        var firstname = document.getElementById("fname").value;
+    
+        var lastname = document.getElementById("lname").value;
+    
+        var subject = document.getElementById("subject").value;
+    
+        alert("\nFirstname: " + firstname + 
+        "\nLastname: " + lastname + 
+        "\nSubject: " + subject + 
+        "\nThank You Email!");
+    }
+    </script>
+    
+    </div>
+</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/compare.js"></script>
+</body>
+
+</html>

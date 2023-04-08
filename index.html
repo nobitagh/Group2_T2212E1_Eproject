@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>   
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Glasses Store</title>
+</head>
+<body>
+  <div style="width: 90%;margin: auto; border: solid 1px rgb(255, 193, 8);border-radius: 5px;">      
+    <nav class="navbar navbar-expand-sm navbar-dark bg-warning" style="border-radius: 2px; height: 60px;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="javascript:void(0)"><img src="logo_icon/logo.png" style="height: 40px;"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="mynavbar" style="background-color: rgb(255, 193, 8);border-radius: 5px;">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact </a>
+                    </li>
+                </ul>
+                
+                    <form class="d-flex">
+                      <ul class="nav navbar-nav navbar-right" style="margin-right: 20px;">
+                      
+                        <li style="margin-right: 20px;"><a href="login.html"><span class="glyphicon glyphicon-log-in"></span><img src="logo_icon/user.png" alt=""class="account"></a></li>
+                        <li ><img src="logo_icon/visits.png" class="account">
+                          <span id="visitor-count" style="font-size: 20px;"> 0 </span></li>
+
+                      </ul>
+                    </form>
+            </div>
+        </div>
+    </nav>
+  </div>
+            <div class="w3-content w3-section" style="max-width:1060px">
+                <img class="mySlides" src="slide_image/slide1.png" style="width:100%">
+                <img class="mySlides" src="slide_image/slide2.png" style="width:100%">
+                <img class="mySlides" src="slide_image/slide3.png" style="width:100%">
+            </div>
+            
+            <!-- Best Sellers -->
+<div class="name-product" style="width: 90%;margin: auto;">
+    <img src="logo_icon/gicon.png" style="width: 50px;" alt="">
+    <a href="products.html">Best Sellers >>></a> 
+</div>
+<div class="container my-2">
+  <div class="row row-eq-height">
+    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5">
+      <div class="product-card h-100 mb-0">
+        <a class="product-card__content" href="product_detail_page.html?id=p19">
+          <span class="product-card__img" style='background-image:url(image/tvparty.png)'></span>
+            <span class="product-card__title">
+              TV PARTY
+            </span>
+            <span class="product-card__price">
+              $95
+            </span>
+        </a>
+        <div class="product-card__actions">
+          <a class="product-card__btn mr-3" href="product_detail_page.html?id=p19">
+            <i class="fas fa-plus mr-2"></i>
+            VIEW PRODUCT
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5">
+      <div class="product-card h-100 mb-0">
+        <a class="product-card__content" href="product_detail_page.html?id=p11">
+          <span class="product-card__img" style='background-image:url(image/TINIFI_SUN.png)'></span>
+            <span class="product-card__title">
+              MOSCOT TINIF SUN
+            </span>
+            <span class="product-card__price">
+              $370
+            </span>
+        </a>
+        <div class="product-card__actions">
+          <a class="product-card__btn mr-3" href="product_detail_page.html?id=p11">
+            <i class="fas fa-plus mr-2"></i>
+            VIEW PRODUCT
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5">
+      <div class="product-card h-100 mb-0">
+        <a class="product-card__content" href="product_detail_page.html?id=p14">
+          <span class="product-card__img" style='background-image:url(image/CLUBMASTERCLASSIC.png)'></span>
+            <span class="product-card__title">
+              RAY BAN CLUBMASTER CLASSIC
+            </span>
+            <span class="product-card__price">
+              $163
+            </span>
+        </a>
+        <div class="product-card__actions">
+          <a class="product-card__btn mr-3" href="product_detail_page.html?id=p14">
+            <i class="fas fa-plus mr-2"></i>
+            VIEW PRODUCT
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5">
+      <div class="product-card h-100 mb-0">
+        <a class="product-card__content" href="product_detail_page.html?id=p15">
+          <span class="product-card__img" style='background-image:url(image/moscotMILTZEN.png)'></span>
+            <span class="product-card__title">
+              MOSCOT MILTZEN SUN
+            </span>
+            <span class="product-card__price">
+              $340
+            </span>
+        </a>
+        <div class="product-card__actions">
+          <a class="product-card__btn mr-3" href="product_detail_page.html?id=p15">
+            <i class="fas fa-plus mr-2"></i>
+            VIEW PRODUCT
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <!-- Eyeglasses -->
+
+<div class="name-product"style="width: 90%;margin: auto;">
+    <img src="logo_icon/gicon.png" style="width: 50px;" alt="">
+    <a href="eyeglasses.html">Eyeglasses >>></a> 
+ </div>
+ <div class="container my-2">
+    <div class="row row-eq-height">
+      <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5">
+        <div class="product-card h-100 mb-0">
+          <a class="product-card__content" href="product_detail_page.html?id=p01">
+            <span class="product-card__img" style='background-image:url(image/PR04WV.jpeg)'></span>
+              <span class="product-card__title">
+                PRADA PR 04WV
+              </span>
+              <span class="product-card__price">
+                $288
+              </span>
+          </a>
+          <div class="product-card__actions">
+            <a class="product-card__btn mr-3" href="product_detail_page.html?id=p01">
+              <i class="fas fa-plus mr-2"></i>
+              VIEW PRODUCT
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5">
+        <div class="product-card h-100 mb-0">
+          <a class="product-card__content" href="product_detail_page.html?id=p02">
+            <span class="product-card__img" style='background-image:url(image/PradaPR51YV.jpeg)'></span>
+              <span class="product-card__title">
+                PRADA PR 51YV
+              </span>
+              <span class="product-card__price">
+                $713
+              </span>
+          </a>
+          <div class="product-card__actions">
+            <a class="product-card__btn mr-3" href="product_detail_page.html?id=p02">
+              <i class="fas fa-plus mr-2"></i>
+              VIEW PRODUCT
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5">
+        <div class="product-card h-100 mb-0">
+          <a class="product-card__content" href="product_detail_page.html?id=p03">
+            <span class="product-card__img" style='background-image:url(image/gucci_gg0241.png)'></span>
+              <span class="product-card__title">
+                GUCCI GG0241O
+              </span>
+              <span class="product-card__price">
+                $625
+              </span>
+          </a>
+          <div class="product-card__actions">
+            <a class="product-card__btn mr-3" href="product_detail_page.html?id=p03">
+              <i class="fas fa-plus mr-2"></i>
+              VIEW PRODUCT
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5">
+        <div class="product-card h-100 mb-0">
+          <a class="product-card__content" href="product_detail_page.html?id=p04">
+            <span class="product-card__img" style='background-image:url(image/gucci_gg0025.png)'></span>
+              <span class="product-card__title">
+                GUCCI GG0025O
+              </span>
+              <span class="product-card__price">
+                $350
+              </span>
+          </a>
+          <div class="product-card__actions">
+            <a class="product-card__btn mr-3" href="product_detail_page.html?id=p04">
+              <i class="fas fa-plus mr-2"></i>
+              VIEW PRODUCT
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5">
+        <div class="product-card h-100 mb-0">
+          <a class="product-card__content" href="product_detail_page.html?id=p05">
+            <span class="product-card__img" style='background-image:url(image/DIOR_STELLAIREO11.jpg)'></span>
+              <span class="product-card__title">
+                DIOR STELLAIREO11
+              </span>
+              <span class="product-card__price">
+                $82
+              </span>
+          </a>
+          <div class="product-card__actions">
+            <a class="product-card__btn mr-3" href="product_detail_page.html?id=p05">
+              <i class="fas fa-plus mr-2"></i>
+              VIEW PRODUCT
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5">
+        <div class="product-card h-100 mb-0">
+          <a class="product-card__content" href="product_detail_page.html?id=p06">
+            <span class="product-card__img" style='background-image:url(image/DIOR_CD3025.jpg)'></span>
+              <span class="product-card__title">
+                DIOR CD3025
+              </span>
+              <span class="product-card__price">
+                $63
+              </span>
+          </a>
+          <div class="product-card__actions">
+            <a class="product-card__btn mr-3" href="product_detail_page.html?id=p06">
+              <i class="fas fa-plus mr-2"></i>
+              VIEW PRODUCT
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5">
+        <div class="product-card h-100 mb-0">
+          <a class="product-card__content" href="product_detail_page.html?id=p07">
+            <span class="product-card__img" style='background-image:url(image/Ray-ban_RX0316V.png)'></span>
+              <span class="product-card__title">
+                RAY BAN RX0316V
+              </span>
+              <span class="product-card__price">
+                $110
+              </span>
+          </a>
+          <div class="product-card__actions">
+            <a class="product-card__btn mr-3" href="product_detail_page.html?id=p07">
+              <i class="fas fa-plus mr-2"></i>
+              VIEW PRODUCT
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5">
+        <div class="product-card h-100 mb-0">
+          <a class="product-card__content" href="product_detail_page.html?id=p08">
+            <span class="product-card__img" style='background-image:url(image/Ray-ban_RX5283.png)'></span>
+              <span class="product-card__title">
+                RAY BAN RX5283
+              </span>
+              <span class="product-card__price">
+                $100
+              </span>
+          </a>
+          <div class="product-card__actions">
+            <a class="product-card__btn mr-3" href="product_detail_page.html?id=p08">
+              <i class="fas fa-plus mr-2"></i>
+              VIEW PRODUCT
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+        <!-- Sunglasses -->
+
+<div class="name-product" style="width: 90%;margin: auto;">
+    <img src="logo_icon/gicon.png" style="width: 50px;" alt="">
+    <a href="sunglasses.html">Sunglasses >>></a> 
+ </div>
+ <div class="container my-2">
+    <div class="row row-eq-height">
+      <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5">
+        <div class="product-card h-100 mb-0">
+          <a class="product-card__content" href="product_detail_page.html?id=p09">
+            <span class="product-card__img" style='background-image:url(image/p3-23k.png)'></span>
+              <span class="product-card__title">
+                RANDOLPH P3-23K
+              </span>
+              <span class="product-card__price">
+                $395
+              </span>
+          </a>
+          <div class="product-card__actions">
+            <a class="product-card__btn mr-3" href="product_detail_page.html?id=p09">
+              <i class="fas fa-plus mr-2"></i>
+              VIEW PRODUCT
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5">
+        <div class="product-card h-100 mb-0">
+          <a class="product-card__content" href="product_detail_page.html?id=p10">
+            <span class="product-card__img" style='background-image:url(image/RB3558.png)'></span>
+              <span class="product-card__title">
+                RAY BAN RB3558
+              </span>
+              <span class="product-card__price">
+                $180
+              </span>
+          </a>
+          <div class="product-card__actions">
+            <a class="product-card__btn mr-3" href="product_detail_page.html?id=p10">
+              <i class="fas fa-plus mr-2"></i>
+              VIEW PRODUCT
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5">
+        <div class="product-card h-100 mb-0">
+          <a class="product-card__content" href="product_detail_page.html?id=p11">
+            <span class="product-card__img" style='background-image:url(image/TINIFI_SUN.png)'></span>
+              <span class="product-card__title">
+                MOSCOT TINIF SUN
+              </span>
+              <span class="product-card__price">
+                $370
+              </span>
+          </a>
+          <div class="product-card__actions">
+            <a class="product-card__btn mr-3" href="product_detail_page.html?id=p11">
+              <i class="fas fa-plus mr-2"></i>
+              VIEW PRODUCT
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5">
+        <div class="product-card h-100 mb-0">
+          <a class="product-card__content" href="product_detail_page.html?id=p12">
+            <span class="product-card__img" style='background-image:url(image/PO0649_24BL.jpeg)'></span>
+              <span class="product-card__title">
+                PERSOL PO0649 24/BL
+              </span>
+              <span class="product-card__price">
+                $220
+              </span>
+          </a>
+          <div class="product-card__actions">
+            <a class="product-card__btn mr-3" href="product_detail_page.html?id=p12">
+              <i class="fas fa-plus mr-2"></i>
+              VIEW PRODUCT
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5">
+        <div class="product-card h-100 mb-0">
+          <a class="product-card__content" href="product_detail_page.html?id=p13">
+            <span class="product-card__img" style='background-image:url(image/swansEr2.jpeg)'></span>
+              <span class="product-card__title">
+                PERSOL ER-2 ER2-0170
+              </span>
+              <span class="product-card__price">
+                $215
+              </span>
+          </a>
+          <div class="product-card__actions">
+            <a class="product-card__btn mr-3" href="product_detail_page.html?id=p13">
+              <i class="fas fa-plus mr-2"></i>
+              VIEW PRODUCT
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5">
+        <div class="product-card h-100 mb-0">
+          <a class="product-card__content" href="product_detail_page.html?id=p14">
+            <span class="product-card__img" style='background-image:url(image/CLUBMASTERCLASSIC.png)'></span>
+              <span class="product-card__title">
+                RAY BAN CLUBMASTER CLASSIC
+              </span>
+              <span class="product-card__price">
+                $163
+              </span>
+          </a>
+          <div class="product-card__actions">
+            <a class="product-card__btn mr-3" href="product_detail_page.html?id=p14">
+              <i class="fas fa-plus mr-2"></i>
+              VIEW PRODUCT
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5">
+        <div class="product-card h-100 mb-0">
+          <a class="product-card__content" href="product_detail_page.html?id=p15">
+            <span class="product-card__img" style='background-image:url(image/moscotMILTZEN.png)'></span>
+              <span class="product-card__title">
+                MOSCOT MILTZEN SUN
+              </span>
+              <span class="product-card__price">
+                $340
+              </span>
+          </a>
+          <div class="product-card__actions">
+            <a class="product-card__btn mr-3" href="product_detail_page.html?id=p15">
+              <i class="fas fa-plus mr-2"></i>
+              VIEW PRODUCT
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5">
+        <div class="product-card h-100 mb-0">
+          <a class="product-card__content" href="product_detail_page.html?id=p16">
+            <span class="product-card__img" style='background-image:url(image/elinor.png)'></span>
+              <span class="product-card__title">
+                RANDOLPH ELINOR FUSION
+              </span>
+              <span class="product-card__price">
+                $340
+              </span>
+          </a>
+          <div class="product-card__actions">
+            <a class="product-card__btn mr-3" href="product_detail_page.html?id=p16">
+              <i class="fas fa-plus mr-2"></i>
+              VIEW PRODUCT
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+        <!-- Reading Glasses -->
+
+<div class="name-product" style="width: 90%;margin: auto;">
+   <img src="logo_icon/gicon.png" style="width: 50px;" alt="">
+    <a href="reading.html">Reading Glasses >>></a> 
+</div>
+<div class="container my-2">
+  <div class="row row-eq-height">
+    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5">
+      <div class="product-card h-100 mb-0">
+        <a class="product-card__content" href="product_detail_page.html?id=p17">
+          <span class="product-card__img" style='background-image:url(image/lookopitic.png)'></span>
+            <span class="product-card__title">
+              LAUREL READERS
+            </span>
+            <span class="product-card__price">
+              $68
+            </span>
+        </a>
+        <div class="product-card__actions">
+          <a class="product-card__btn mr-3" href="product_detail_page.html?id=p17">
+            <i class="fas fa-plus mr-2"></i>
+            VIEW PRODUCT
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5">
+      <div class="product-card h-100 mb-0">
+        <a class="product-card__content" href="product_detail_page.html?id=p18">
+          <span class="product-card__img" style='background-image:url(image/caddis.PNG)'></span>
+            <span class="product-card__title">
+              MIKLOS READING GLASSES
+            </span>
+            <span class="product-card__price">
+              $99
+            </span>
+        </a>
+        <div class="product-card__actions">
+          <a class="product-card__btn mr-3" href="product_detail_page.html?id=p18">
+            <i class="fas fa-plus mr-2"></i>
+            VIEW PRODUCT
+          </a>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5">
+      <div class="product-card h-100 mb-0">
+        <a class="product-card__content" href="product_detail_page.html?id=p19">
+          <span class="product-card__img" style='background-image:url(image/TVPARTY.PNG)'></span>
+            <span class="product-card__title">
+              TV PARTY
+            </span>
+            <span class="product-card__price">
+              $95
+            </span>
+        </a>
+        <div class="product-card__actions">
+          <a class="product-card__btn mr-3" href="product_detail_page.html?id=p19">
+            <i class="fas fa-plus mr-2"></i>
+            VIEW PRODUCT
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5">
+      <div class="product-card h-100 mb-0">
+        <a class="product-card__content" href="product_detail_page.html?id=p20">
+          <span class="product-card__img" style='background-image:url(image/PeeperSpecs.jpg)'></span>
+            <span class="product-card__title">
+              PEEPERSPECS
+            </span>
+            <span class="product-card__price">
+              $49.99
+            </span>
+        </a>
+        <div class="product-card__actions">
+          <a class="product-card__btn mr-3" href="product_detail_page.html?id=p20">
+            <i class="fas fa-plus mr-2"></i>
+            VIEW PRODUCT
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Lenses -->
+
+<div class="name-product" style="width: 90%;margin: auto;">
+    <img src="logo_icon/gicon.png" style="width: 50px;" alt="">
+    <a href="lenses.html">Contact Lenses >>></a> 
+ </div>
+ <div class="container my-2">
+   <div class="row row-eq-height">
+     <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5">
+       <div class="product-card h-100 mb-0">
+         <a class="product-card__content" href="product_detail_page.html?id=p21">
+           <span class="product-card__img" style='background-image:url(image/acuvue_oasys.png)'></span>
+             <span class="product-card__title">
+               ACUVUE OASYS
+             </span>
+             <span class="product-card__price">
+               $49.99
+             </span>
+         </a>
+         <div class="product-card__actions">
+           <a class="product-card__btn mr-3" href="product_detail_page.html?id=p21">
+             <i class="fas fa-plus mr-2"></i>
+             VIEW PRODUCT
+           </a>
+         </div>
+       </div>
+     </div>
+     <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5">
+       <div class="product-card h-100 mb-0">
+         <a class="product-card__content" href="product_detail_page.html?id=p22">
+           <span class="product-card__img" style='background-image:url(image/alcondamau.png)'></span>
+             <span class="product-card__title">
+               ALCON AIR OPTIC COLORS
+             </span>
+             <span class="product-card__price">
+               $19.99
+             </span>
+         </a>
+         <div class="product-card__actions">
+           <a class="product-card__btn mr-3" href="product_detail_page.html?id=p22">
+             <i class="fas fa-plus mr-2"></i>
+             VIEW PRODUCT
+           </a>
+           
+         </div>
+       </div>
+     </div>
+     <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5">
+       <div class="product-card h-100 mb-0">
+         <a class="product-card__content" href="product_detail_page.html?id=p23">
+           <span class="product-card__img" style='background-image:url(image/soflens.png)'></span>
+             <span class="product-card__title">
+              SOFLENS NATURAL COLORS
+             </span>
+             <span class="product-card__price">
+               $24.99
+             </span>
+         </a>
+         <div class="product-card__actions">
+           <a class="product-card__btn mr-3" href="product_detail_page.html?id=p23">
+             <i class="fas fa-plus mr-2"></i>
+             VIEW PRODUCT
+           </a>
+         </div>
+       </div>
+     </div>
+     <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5">
+       <div class="product-card h-100 mb-0">
+         <a class="product-card__content" href="product_detail_page.html?id=p24">
+           <span class="product-card__img" style='background-image:url(image/R.jpg)'></span>
+             <span class="product-card__title">
+               BIOFINITY MULTIFOCAL
+             </span>
+             <span class="product-card__price">
+               $49.99
+             </span>
+         </a>
+         <div class="product-card__actions">
+           <a class="product-card__btn mr-3" href="product_detail_page.html?id=p24">
+             <i class="fas fa-plus mr-2"></i>
+             VIEW PRODUCT
+           </a>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+        <!-- end page -->
+
+        <!-- contacts us  -->
+
+<div class="container">
+  <div style="text-align:center">
+  <h1 style="color: rgb(255, 193, 8);" id="contact">CONTACT US</h1>
+    
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+        <div class="column">
+            <div style="text-align: center; background-color:rgb(251, 230, 169);border-radius: 8px;">
+                <img src="logo_icon/place.png" style="width: 15%;" class="f1">
+                <br>
+                <h5 style="text-align: left;">
+                - Store 1: 590 Cach Mang Thang 8,P.11, Q 3, Ho Chi Minh City <br><br>
+                - Store 2: 62 Street 36, KDC Van Phuc, P.Hiep Binh Phuoc, Thu Duc City.
+                </h5>
+            </div>
+            <br> <br>
+            <div style="text-align: center;background-color:rgb(251, 230, 169);border-radius: 8px;">
+                <img src="logo_icon/call.png" style="width: 12%;" class="f1">
+                <br>
+                <h5>
+                Tell: 1 (234) 567-891 <br><br>
+                Tell: 1 (234) 987-654 
+                </h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4" style="margin: auto;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3192813592464!2d106.66408561467625!3d10.786840061951278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed2392c44df%3A0xd2ecb62e0d050fe9!2zRlBUIEFwdGVjaCBIQ00gMSAtIEjhu4cgVGjhu5FuZyDEkMOgbyBU4bqhbyBM4bqtcCBUcsOsbmggVmnDqm4gUXXhu5FjIFThur8gKFNpbmNlIDE5OTkp!5e0!3m2!1svi!2s!4v1679514213021!5m2!1svi!2s" width="300" height="350" style="border: 5px; border-radius: 10px; margin: 0 0 0 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="col-sm-4">
+        <div class="column" style="background-color: rgb(251, 230, 169);border-radius: 8px;">
+          <form  onsubmit="showinfo()">  
+          <form action="/action_page.php">
+              <label for="fname">First Name</label><br>
+              <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+              <label for="lname">Last Name</label><br>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+              <label for="fname">Subject</label><br>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:120px"></textarea><br>
+              <input type="submit" value="Submit" style="border-radius: 10px;">
+            </form>
+
+            </form>
+          </div>
+    </div>
+    
+  </div>
+</div>
+
+<div style="position: fixed; bottom: 0; width: 100%; background-color: rgb(255, 193, 8); color: black;">
+  <marquee>
+    <span id="date"></span> | <span id="time"></span> | <span id="location"></span>
+  </marquee>
+</div>
+
+<script>
+  // Get visitor count
+let visitorCount = parseInt(localStorage.getItem('visitorCount')) || 0;
+visitorCount++;
+localStorage.setItem('visitorCount', visitorCount);
+document.getElementById('visitor-count').textContent = visitorCount;
+</script>
+
+<!-- date time -->
+
+ <script>
+  function updateTicker() {
+  var now = new Date();
+  var date = now.toLocaleDateString();
+  var time = now.toLocaleTimeString();
+  var location = "Unknown";
+  
+  if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function(position) {
+          var lat = position.coords.latitude;
+          var lng = position.coords.longitude;
+          
+          // You can use the lat and lng values to get the location
+          // using a reverse geocoding API
+          location = "Latitude: " + lat + ", Longitude: " + lng;
+          
+          document.getElementById("location").innerHTML = location;
+      });
+  }
+  document.getElementById("date").innerHTML = date;
+  document.getElementById("time").innerHTML = time;
+}
+// Update the ticker every second
+setInterval(updateTicker, 1000);
+ </script>
+
+
+<script>
+  function showinfo()
+{
+    var firstname = document.getElementById("fname").value;
+
+    var lastname = document.getElementById("lname").value;
+
+    var subject = document.getElementById("subject").value;
+
+    alert("\nFirstname: " + firstname + 
+    "\nLastname: " + lastname + 
+    "\nSubject: " + subject + 
+    "\nThank You Email!");
+}
+
+</script>
+ <!-- slide image  -->
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+    </script>
+</body>
+
+</html>
